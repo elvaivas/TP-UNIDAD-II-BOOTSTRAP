@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1">
+    <title>Practica Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form>
+
+            <div class="form-groud row">
+                <div class="col-6">
+                    <label for="name" class="w-100">Nombre de pila</label>
+                    <input type="text" class="form-control w-100" id="name">
+                </div>
+                <div class="col-6">
+                    <label for="lastName" class="w-100">Apellido</label>
+                    <input type="text" class="form-control w-100 mb-2" id="lastName">
+                </div>
+
+            </div>
+               <div class="form-group">
+                    <label for="usuario">Nombre de usuario</label>
+                    <label class="sr-only" for="usuario">Username</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                      </div>
+                      <input type="text" class="form-control" id="usuario" placeholder="Username">
+                    </div>
+               </div>
+    
+            <div class="form-group">
+                <label for="exampleInputEmail1">Correo electrónico</label>
+                <input type="email" class="form-control mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="you@example.com">
+
+                <div class="form-group">
+                    <label for="direccion">Habla a</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="1234 Main St">
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion2">Dirección 2 <span class="text-muted">(opcional)</span></label>
+                    <input type="text" class="form-control" id="direccion2" placeholder="1234 Main St">
+                </div>
+
+                <div class="form-groud row">
+                    <div class="col-md-5">
+                        <label for="pais" class="w-100">País</label>
+                        <select name="pais" class="form-control custom-select w-100" id="pais" required="required">
+                            <option class="text-muted" value="NULO" selected> Elegir... </option>
+                            <option value="AF"> Afganistán </option>
+                            <option value="AR"> Argentina</option>
+                            <option value="AL"> Albania </option>
+                            <option value="ES"> España </option>
+                            <option value="VE"> Venezuela</option>
+                        </select>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="estado" class="w-100">Estado</label>
+                        <select name="estado" class="form-control custom-select w-100" id="pais" required>
+                            <option class="text-muted" value="NULO" selected> Elegir... </option>
+                            <option value="1"> option 1 </option>
+                            <option value="2"> option 2 </option>
+                            <option value="3"> option 3</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="codigo-postal" class="w-100">Código Postal</label>
+                        <input type="text" class="form-control w-100 mb-4" id="codigo-postal" maxlength="5">
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">La dirección de envío es la misma que mi
+                        dirección de facturación</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Guarde esta información para la próxima
+                        vez</label>
+                </div>
+
+                
+        </form>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
